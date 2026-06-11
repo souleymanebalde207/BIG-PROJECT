@@ -593,7 +593,7 @@ modif :
 
                 gotoxy(60, 16);
                 printf("Donner le nouveau nom : ");
-                saisie( classe[position].nom , 40); 
+                 scanf("%s",classe[position].nom);
                 gotoxy(60, 17);
                 setColor(FOREGROUND_GREEN);
                 printf("Nom modifier avec succes!!!!");
@@ -604,7 +604,7 @@ modif :
 
                 gotoxy(60, 16);
                 printf("Donner le nouveau prenom : ");
-               saisie( classe[position].prenom , 40); 
+               scanf("%s",classe[position].prenom);
                 gotoxy(60, 17);
                 setColor(FOREGROUND_GREEN);
                 printf("Prenom modifier avec succes!!!!");
@@ -614,7 +614,7 @@ modif :
             case 4 :                                                 // CASE 4 DANS MENU MODIF                 
                 gotoxy(60, 16);
                 printf("Donner la nouvelle Adresse : ");
-               saisie( classe[position].adresse, 40); 
+                scanf("%s",classe[position].adresse);
                 gotoxy(60, 17);
                 setColor(FOREGROUND_GREEN);
                 printf("Adresse modifier avec succes!!!!");
